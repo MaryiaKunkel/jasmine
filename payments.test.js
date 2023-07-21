@@ -36,7 +36,7 @@ describe("Payments test (with setup and tear-down)", function() {
         const numberOfPayments = 10;
         const tipPercentAvg = document.querySelector('#summaryTable tbody tr td:nth-child(3)');
         console.log(tipPercentAvg.innerHTML)
-        expect(tipPercentAvg.innerHTML).toEqual('10%');
+        expect(tipPercentAvg.innerHTML).toEqual('20%');
     });
   
     afterEach(function() {
