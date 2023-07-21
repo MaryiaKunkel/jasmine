@@ -5,9 +5,9 @@ describe("Helpers test (with setup and tear-down)", function() {
   
     it ('should calculate the sum of payment type', function(){
         allPayments = {
-            payment1: { billAmt: 10, tipAmt: 2 },
-            payment2: { billAmt: 20, tipAmt: 4 },
-            payment3: { billAmt: 30, tipAmt: 6 }
+            payment1: { billAmt: 10, tipAmt: 2, tipPercent: Math.round(100 / (10 / 2)) },
+            payment2: { billAmt: 20, tipAmt: 4, tipPercent: Math.round(100 / (20 / 4)) },
+            payment3: { billAmt: 30, tipAmt: 6, tipPercent: Math.round(100 / (30 / 6)) }
           };
 
           let tipTotal = sumPaymentTotal('tipAmt');
